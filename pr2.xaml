@@ -1,0 +1,446 @@
+﻿<Window x:Class="Pr2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pr2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="389" Width="400">
+    <Grid>
+        <Viewport3D Name="viewport3D">
+            <Viewport3D.Camera>
+                <PerspectiveCamera Position="0,0,1.3" LookDirection="0,0,-1" FieldOfView="60"/>
+            </Viewport3D.Camera>
+            <Viewport3D.Children>
+                <ModelVisual3D>
+                    <ModelVisual3D.Content>
+                        <Model3DGroup>
+                            <AmbientLight Color="White"/>
+                            <!-- Multiple Petals -->
+
+                            <GeometryModel3D x:Name="myModel">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="pink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D x:Name="petalRotation" Axis="0,0,1" Angle="0"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel2">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="LightPink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="51"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel3">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="Pink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="102"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel4">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="LightPink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="153"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel5">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="Pink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="204"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel6">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="LightPink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="255"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel7">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="Pink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="306"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel8">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="LightPink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="306"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel9">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="Pink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="306"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel10">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="LightPink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="306"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel11">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="Pink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="306"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel12">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="LightPink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="306"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel13">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="pink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="306"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel14">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="LightPink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="306"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel15">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="Pink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="306"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel16">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="LightPink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="306"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel17">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="Pink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="306"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel18">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="LightPink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="306"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel19">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="Pink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="306"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel20">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="LightPink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="306"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+
+                            <GeometryModel3D x:Name="myModel21">
+                                <GeometryModel3D.Geometry>
+                                    <MeshGeometry3D Positions="-0.2 0 0  0.2 0 0  0 0.5 0" TriangleIndices="0 1 2"/>
+                                </GeometryModel3D.Geometry>
+                                <GeometryModel3D.Material>
+                                    <DiffuseMaterial>
+                                        <DiffuseMaterial.Brush>
+                                            <SolidColorBrush Color="Pink"/>
+                                        </DiffuseMaterial.Brush>
+                                    </DiffuseMaterial>
+                                </GeometryModel3D.Material>
+                                <GeometryModel3D.Transform>
+                                    <RotateTransform3D>
+                                        <RotateTransform3D.Rotation>
+                                            <AxisAngleRotation3D Axis="0,0,1" Angle="306"/>
+                                        </RotateTransform3D.Rotation>
+                                    </RotateTransform3D>
+                                </GeometryModel3D.Transform>
+                            </GeometryModel3D>
+                        </Model3DGroup>
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>
+            </Viewport3D.Children>
+        </Viewport3D>
+    </Grid>
+</Window>
